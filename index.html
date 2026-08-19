@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel Cavalheri // Data Science &amp; ML</title>
+<meta name="description" content="Gabriel Cavalheri — Data Science, Machine Learning, Physics and Cybersecurity. Portfolio and projects.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#hero" class="brand">
+      <img src="assets/logo.png" alt="Gabriel Cavalheri" class="brand-img">
+      <span class="brand-text">GABRIEL<span class="accent">.DEV</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">ABOUT</a>
+      <a href="#projects" data-i18n="nav.projects">PROJECTS</a>
+      <a href="#skills" data-i18n="nav.skills">STACK</a>
+      <a href="#journey" data-i18n="nav.journey">JOURNEY</a>
+      <a href="#contact" data-i18n="nav.contact">CONTACT</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-opt" data-lang-opt="pt">PT</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt is-active" data-lang-opt="en">EN</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="section hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">DATA SCIENCE • MACHINE LEARNING • PHYSICS • CYBER</p>
+        <h1 class="hero-title">
+          GABRIEL <span class="accent">CAVALHERI</span>
+        </h1>
+        <p class="hero-role" data-i18n="hero.role">Data Science &amp; ML · Physics · Cyber</p>
+        <p class="hero-desc" data-i18n="hero.desc">Turning raw data, physics and curiosity into working systems — models, pipelines and tools built between research, an MBA and a lot of trial and error.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1">VIEW PROJECTS →</a>
+          <a href="#" class="btn btn-ghost" id="resumeBtn"><span>&gt;_</span> <span data-i18n="hero.cta2">OPEN RESUME</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <img src="assets/logo.png" alt="Gabriel Cavalheri mascot" class="hero-logo-img">
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-hidden="true"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="tag-line">/* <span data-i18n="about.tagcomment">a bit about me</span> */</p>
+      <h2 class="section-title" data-i18n="about.title">WHO'S BEHIND THE CODE.</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.p1">I'm a physicist by training (UFSCar), currently pursuing an MBA in Artificial Intelligence &amp; Big Data at USP.</p>
+          <p data-i18n="about.p2">During my undergrad years I developed a passion for turning raw data into insights and working systems — which led me from academic research in applied acoustics into the world of data.</p>
+          <p data-i18n="about.p3">I like challenges, hacking, data, games, music and control — these things inspire me to build and test new things.</p>
+
+          <div class="about-pills">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>PyTorch</span>
+            <span>SQL</span>
+            <span>Spark</span>
+            <span>Docker</span>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label" data-i18n="about.stat1">DEGREES: PHYSICS + AI/BIG DATA MBA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" id="statProjects">8+</span>
+            <span class="stat-label" data-i18n="about.stat2">REAL PROJECTS ON GITHUB</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">12+</span>
+            <span class="stat-label" data-i18n="about.stat3">TECH STACKS</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label" data-i18n="about.stat4">CURIOSITY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <p class="tag-line">/* <span data-i18n="projects.tagcomment">projects I've built</span> */</p>
+      <div class="section-head-row">
+        <h2 class="section-title" data-i18n="projects.title">DATA, MODELS AND SYSTEMS THAT SOLVE REAL PROBLEMS.</h2>
+        <span class="section-count" id="projectCount"></span>
+      </div>
+      <p class="section-desc" data-i18n="projects.desc">Each project below is a different attempt to answer a real question — with data, a model or a pipeline.</p>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn is-active" data-filter="all" data-i18n="filters.all">ALL</button>
+        <button class="filter-btn" data-filter="ai" data-i18n="filters.ai">AI / ML</button>
+        <button class="filter-btn" data-filter="data" data-i18n="filters.data">DATA ENG</button>
+        <button class="filter-btn" data-filter="web" data-i18n="filters.web">WEB</button>
+        <button class="filter-btn" data-filter="dashboard" data-i18n="filters.dashboard">DASHBOARD</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+      <p class="empty-state" id="emptyState" hidden data-i18n="projects.empty">No projects with that tag yet — but it's coming.</p>
+
+      <div class="projects-more">
+        <a href="https://github.com/GMCavalheri?tab=repositories" target="_blank" rel="noopener" data-i18n="projects.more">See all repositories on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="tag-line">/* <span data-i18n="skills.tagcomment">stack I use</span> */</p>
+      <h2 class="section-title" data-i18n="skills.title">THE TOOLS BEHIND THE MODELS.</h2>
+      <p class="section-desc" data-i18n="skills.desc">From languages to ML frameworks and data infrastructure — what I use day to day to explore, train and ship.</p>
+
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3 data-i18n="skills.g1">LANGUAGES &amp; CORE</h3>
+          <div class="skill-pills">
+            <span>Python</span><span>SQL</span><span>Math</span><span>Physics</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.g2">MACHINE LEARNING &amp; AI</h3>
+          <div class="skill-pills">
+            <span>TensorFlow</span><span>PyTorch</span><span>Machine Learning</span><span>AI Models</span><span>Pandas</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.g3">DATA &amp; INFRA</h3>
+          <div class="skill-pills">
+            <span>PostgreSQL</span><span>Spark</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey" class="section section-alt">
+    <div class="container">
+      <p class="tag-line">/* <span data-i18n="journey.tagcomment">journey</span> */</p>
+      <h2 class="section-title" data-i18n="journey.title">MY JOURNEY SO FAR.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"><span data-i18n="journey.now">NOW</span></div>
+          <div class="timeline-content">
+            <h3 data-i18n="journey.t1title">MBA in Artificial Intelligence &amp; Big Data — USP</h3>
+            <p data-i18n="journey.t1desc">Deepening machine learning, big data engineering and applied AI, while building end-to-end projects — from ETL pipelines to trained models.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"><span>→</span></div>
+          <div class="timeline-content">
+            <h3 data-i18n="journey.t2title">From Physics to Data</h3>
+            <p data-i18n="journey.t2desc">Research in applied acoustics during my undergrad sparked a passion for turning raw signals and data into insight — the bridge from physics into data science.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"><span data-i18n="journey.start">START</span></div>
+          <div class="timeline-content">
+            <h3 data-i18n="journey.t3title">Physics — UFSCar</h3>
+            <p data-i18n="journey.t3desc">Undergraduate degree in Physics, building the foundation in math, modeling and rigorous problem solving that still shapes how I approach every project.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-cta">
+        <p data-i18n="journey.resume">Want the full resume?</p>
+        <div class="resume-buttons">
+          <a href="resume/Gabriel_Milanez_Cavalheri_CV_EN.pdf" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="journey.resumeEN">DOWNLOAD CV (EN) ↗</a>
+          <a href="resume/Gabriel_Milanez_Cavalheri_CV.pdf" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="journey.resumePT">DOWNLOAD CV (PT-BR) ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-inner">
+      <p class="tag-line">/* <span data-i18n="contact.tagcomment">get in touch</span> */</p>
+      <h2 class="section-title" data-i18n="contact.title">LET'S WORK TOGETHER?</h2>
+      <p class="section-desc" data-i18n="contact.desc">Have a project, a dataset or a hard problem in mind? Reach out — I'll get back to you as soon as I can.</p>
+
+      <div class="contact-links">
+        <a href="mailto:gmcavalheri@gmail.com">✉ gmcavalheri@gmail.com</a>
+        <a href="https://github.com/GMCavalheri" target="_blank" rel="noopener">◐ github.com/GMCavalheri</a>
+        <a href="https://www.linkedin.com/in/gabriel-milanez-cavalheri/" target="_blank" rel="noopener">◑ linkedin.com/in/gabriel-milanez-cavalheri</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p><span class="accent">GABRIEL CAVALHERI</span> — <span data-i18n="footer.tag">Data Science &amp; ML, built with curiosity.</span></p>
+    <p class="footer-mono">&gt;_</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
